@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .nav{
+            position: fixed;
+            left:25%;
+            width: 600px;
+            height: 640px;
+            overflow: hidden;
+            top: 20px;
+            background-color: #fff;
+        }
+        .container{
+            width: 100%;
+            font-size: 30px;
+            text-align: center;
+            float: left;
+            height: 80px;
+            margin:0 auto;
+        }
+        .zhu{
+            float: left;
+            width: 100%;
+            height: 550px;
+        }
+        .user1,.user2,.user3{
+            float: left;
+            width: 100%;
+            height: 140px;
+            position: relative;
+        }
+        .user1 input,.user2 input,.user3 input{
+            width: 80%;
+            height: 30px;
+            border: 1px solid #d2d2d2;
+            outline: none;
+            position: absolute;
+            color: #000;
+            left: 100px;
+            top: 53px;
+        }
+        .user1 span,.user2 span,.user3 span{
+            color: #3b3c3e;
+            float: left;
+            font-size: 14px;
+            margin-top: 60px;
+            margin-left: 10px;
+        }
+        .ce{
+            width: 100%;
+            height: 83px;
+            float: left;
+        }
+        .ce button{
+            width: 200px;
+            height: 50px;
+            float: left;
+            margin-left: 200px;
+            color: #2918e1;
+            border:none;
+            outline: none;
+            background-color: #e1e1bf;
+            font-size: 25px;
+        }
+        .dao{
+            width: 100%;
+            height: 50px;
+            float: left;
+        }
+        .dao a{
+            font-size: 12px;
+            float: left;
+            color:#a6a5a9;
+            text-decoration: none;
+            margin-top:30px;
+            padding-left: 20px;
+        }
+        .dao a:hover{
+            color: #d60e21;
+        }
+    </style>
+</head>
+<body>
+<section style="width: 100%;height: 653px;background-color: #d3d6d6;float: left"></section>
+<section class="nav">
+<section class="container"><h3>用户注册</h3></section>
+<section class="zhu">
+    <section class="user1" >
+   <span>用户名:</span><input id="users" type="text" placeholder="请输入数字，英文"></section>
+    <section class="user2">
+   <span>密码:</span><input id="passwords" type="password" placeholder="数字，英文"></section>
+    <section class="user3">
+   <span>确认密码:</span><input id="pass" type="password" placeholder="中文，数字"></section>
+    <section class="ce"><button>注册</button></section>
+    <section class="dao"><a href="../index.html" style="margin-left: 400px;">返回首页</a><a href="denglu.html">我有账号，要登录</a></section>
+</section>
+</section>
+
+<script src="../js/public/jquery-3.1.1.js"></script>
+<script src="../js/public/HTTPClient.js"></script>
+<script src="../js/refor/reforView.js"></script>
+<script src="../js/refor/refor.js"></script>
+</body>
+</html>

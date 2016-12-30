@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/goodsDetail.css">
+</head>
+<body>
+<section id="container-one">
+    <section class="bb">
+    <ul>
+        <li><a href="../index.html">返回首页</a></li>
+        <li><a href="#">欢迎登陆走秀网</a></li>
+        <li><a href="gouwuche.html"><img src="../images/cart_icon.png">购物车<span>xx</span></a></li>
+        <li><a href="#">帮助中心</a></li>
+    </ul>
+    </section>
+</section>
+<section id="container-two">
+    <section class="cc">
+    <section class="logo-container"><a href="../index.html"><img src="../images/logo_zhe800.png"></a></section>
+    <section class="search-container"><input type="text" placeholder="腿长新时尚"><a href="search.html"><button>搜索</button></a></section>
+</section>
+</section>
+<section class="goods-container">
+    <div class="detail">
+        <div class="detail-left">
+           <section class="goodes-container"></section>
+           <section class="gooded-container"></section>
+        </div>
+        <div class="detail-right">
+               <div class="detail1"></div>
+               <div class="detail2">
+                   <div class="hh detail2-one"><p>保证正品 放心购买</p></div>
+                   <div class="hh detail2-two"></div>
+                   <div class="hh detail2-three"></div>
+               </div>
+            <div class="detail3">
+                <div class="detail3-one"></div>
+            </div>
+            <div class="detail4">
+                <span>数量</span><input id="text_box" name="goodnum" type="text"
+                       value="1" style="width:25px;height: 30px;left: 80px;" />
+                <input id="min" name="" type="button" value="-" style="width:20px;height: 18px;left: 109px;top: 15px;"/>
+                <input id="add" name="" type="button" value="+" style="width:20px;height: 18px;left: 109px;"/></td>
+            </div>
+            <div class="detail5">
+                 <button class="gou">立即购买</button>
+                 <button class="che">加入购物车</button>
+            </div>
+            <div class="detail6"></div>
+        </div>
+    </div>
+</section>
+<div class="nas">
+  <div class="wan">
+      <div class="wan-top"><h5>商品详情</h5></div>
+      <div class="wan-bottom">
+      </div>
+  </div>
+</div>
+<div class="foot">
+<div class="footer">
+</div>
+</div>
+<footer class="bottom-container">
+    <section class="bottoms-container">
+        <div class="foot1">
+            <ul>
+                <li><h3>关于我们</h3></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">官方视频</a></li>
+                <li><a href="#">诚聘英才</a></li>
+                <li><a href="#">网站服务条款</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <ul>
+                <li><h3>购物指南</h3></li>
+                <li><a href="#">新手玩转走秀网</a></li>
+                <li><a href="#">订单查询</a></li>
+                <li><a href="#">会员介绍</a></li>
+                <li><a href="#">积分攻略</a></li>
+                <li><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+        <div class="foot3">
+            <span><b>下载手机版</b></span>
+            <div class="Img">
+                <div class="Imgs"></div>
+                <p>
+                    把折扣握在手心<br>把潮流带在身边
+                </p>
+            </div>
+        </div>
+    </section>
+</footer>
+<footer class="bottom-container1">
+    <div class="ones">
+        <div class="ones-one">
+            <span>
+                京ICP证120075号  京ICP备10051110号-5  京公网安备11010502025623
+                营业执照110105013673175  食品流通许可证SP1101051510352397<br>
+出版物经营许可证 新出发京零字第朝160018号  Copyright©2011-2015 版权所有 ZHE800.COM
+            </span>
+        </div>
+        <div class="ones-two">
+            <img src="../images/c_01.jpg">
+            <img src="../images/c_11.jpg">
+            <img src="../images/c_04.jpg">
+            <img src="../images/c_09.jpg">
+        </div>
+    </div>
+</footer>
+<script src="../js/public/jquery-3.1.1.js"></script>
+<script src="../js/public/HTTPClient.js"></script>
+<script src="../js/goods/goodsView.js"></script>
+<script src="../js/goods/goodsDetail.js"></script>
+<script>
+    $(function(){
+        var t = $("#text_box");
+
+        $("#add").click(function(){
+            t.val(parseInt(t.val())+1);
+        });
+        $("#min").click(function(){
+            t.val(parseInt(t.val())-1);
+        })
+    })
+</script>
+</body>
+</html>
